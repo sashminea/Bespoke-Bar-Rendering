@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html, body {
+    overflow: hidden;
+}
+
+body{
+    background-color: #ede2ed;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    display: block;
+    background: linear-gradient(to bottom, #FED4FF, #ede2ed);
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: glow 10s linear infinite;
+}
+
+@keyframes glow {
+    0%{
+        height: 0px;
+        opacity: 20%;
+
+    }   
+
+    50%{
+        height: 100px;
+        opacity: 100%;
+
+        }
+
+    100%{
+        height: 0px;
+        opacity: 20%;
+
+    }
+}
+
+.container{
+    display: block;
+    width: 93vw;
+    height: 90vh;
+    flex-shrink: 0;
+   
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 4%;
+
+}
+
+.logo-container, .bar-container{
+    display: block;
+
+    height: 65vh;
+    
+}
+
+.logo-container {
+    width: 38%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 6.24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #582159, #2443AE);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.bar-container{
+    width: 58%;
+}
+
+
+
+
