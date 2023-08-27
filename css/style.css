@@ -9,37 +9,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.navbar{
-    display: block;
-    background: linear-gradient(to bottom, #FED4FF, #ede2ed);
-    height: 100px;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    animation: glow 10s linear infinite;
-}
-
-@keyframes glow {
-    0%{
-        height: 0px;
-        opacity: 20%;
-
-    }   
-
-    50%{
-        height: 100px;
-        opacity: 100%;
-
-        }
-
-    100%{
-        height: 0px;
-        opacity: 20%;
-
-    }
-}
-
 .container{
     display: block;
     width: 93vw;
@@ -56,7 +25,7 @@ body{
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    gap: 4%;
+    gap: 2%;
 
 }
 
@@ -68,7 +37,7 @@ body{
 }
 
 .logo-container {
-    width: 38%;
+    width: 39%;
     font-family: 'Roboto', sans-serif;
     font-size: 11vh;
     font-style: normal;
@@ -76,19 +45,61 @@ body{
     line-height: normal;
     letter-spacing: 6.24px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
     justify-content: center;
     background: linear-gradient(45deg, #582159, #2443AE);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
+    animation: logoGlow 10s linear infinite;
+}
+
+@keyframes logoGlow {
+    0%{
+        background: linear-gradient(45deg, #582159, #2443AE);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }   
+
+    50%{
+        background: linear-gradient(180deg, #582159, #2443AE);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        }
+
+    100%{
+        background: linear-gradient(45deg, #582159, #2443AE);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
 }
 
 
 .bar-container{
-    width: 58%;
+    width: 59%;
 }
 
+.logo-sub{
+    font-size: 2vh;
 
+}
 
+.bar-container{
+    border-radius: 8px;
+    display: block;
+    background-color: #f3edf3;
+}
 
+.navbar svg{
+    position: relative;
+    left: 98%;
+    height: 3vh;
+    width: auto;
+
+}
