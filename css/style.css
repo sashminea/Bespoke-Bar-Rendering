@@ -2,6 +2,7 @@
 
 html, body {
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -9,41 +10,22 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.container{
-    display: block;
-    width: 93vw;
-    height: 90vh;
-    flex-shrink: 0;
-   
+.navbar{
 
+    height: 5vh;
+    width: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    gap: 2%;
-
-}
-
-.logo-container, .bar-container{
-    display: block;
-
-    height: 65vh;
-    
+    top: 0;
+    left: 0;
 }
 
 .logo-container {
-    width: 39%;
     font-family: 'Roboto', sans-serif;
-    font-size: 11vh;
+    font-size: 2vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 6.24px;
+    letter-spacing: 3px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -53,7 +35,7 @@ body{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-
+    padding: 1vh;
     animation: logoGlow 10s linear infinite;
 }
 
@@ -80,26 +62,59 @@ body{
     }
 }
 
-
-.bar-container{
-    width: 59%;
+section {
+    position: absolute;
+    top: 5vh;
+    background-color: rgb(249, 238, 247);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 10px;
+    left: 0;
 }
 
-.logo-sub{
-    font-size: 2vh;
-
-}
-
-.bar-container{
-    border-radius: 8px;
-    display: block;
-    background-color: #f3edf3;
-}
-
-.navbar svg{
+.graph-menu{
+    background-color: #ede2ed;
+    width: 4%;
+    height: 90%;
     position: relative;
-    left: 98%;
-    height: 3vh;
-    width: auto;
+    top: 3vh;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+}
+
+.graph-item{
+    display: block;
+    width: 80%;
+    height: 10%;
+    position: relative;
+    top: 6vh;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    gap: 10px;
+    color: rgb(92, 32, 93);
+}
+
+.graph-item svg{
+    display: block;
+    position: relative;
 
 }
+
+.graph-item-text{
+    position: relative;
+    top: 0.7vh;
+    font-size: larger;
+    
+}
+
+.graph-item:hover{
+    cursor: pointer;
+    color: red;
+}
+
